@@ -5,54 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        body {
+            font: 100% Verdana;
+            margin: 20px;
+            line-height: 26px;
+        }
+        h1,h2,h3{
+            color:#4CAF50;
+        }
+        .wrapper{
+            position: relative;
+            overflow: auto;
+        }
+        ul {
+            padding: 0;
+            position: relative;
+            overflow: auto;
+        }
+        .item:nth-child(3){
+            background-color: #04AA6D;
+        }
+        .item{
+            width: 165px;
+            float: left;
+            background-color: #555555;
+            color: #ffffff;
+            list-style-type: none;
+            margin: 4px;
+            padding: 2px;
+            text-align: center;
+            cursor: pointer;
+        }
+        main{
+          
+        }
+        
+        aside{
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            padding-left: 10px;
+        }
+        footer{
+            text-align: center;
+            padding: 10px;
+            font-size: 70%;
+            line-height: 14px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-    <h1>Welcome to My Homepage</h1>
-    <p>Use the menu to select different Stylesheets</p>
+        <div id="title">
+            <h1>Welcome to 장종우 Homepage(22300644)</h1>
+            <p>Use the menu to select different Stylesheets</p>
+        </div>
     </header>
-    <main>
-    <nav>
-    <ul>
-        <li>Stylesheet 1</li>
-        <li>Stylesheet 2</li>
-        <li>Stylesheet 3</li>
-        <li>Stylesheet 4</li>
-        <li>No Stylesheet</li>
-    </ul>
-    </nav>
-    <div>
-        <h1>Same Page Different Stylesheets</h1>
-        <p>
-        This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
-        layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links: 
-        <br>
-        <a href="">Stylesheet1</a>, <a href="">Stylesheet2</a>, <a href="">Stylesheet3</a>, <a href="">Stylesheet4.</a>
-        </p>
-        <h2>No Styles</h2>
-        <p>
-        This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
-        like with no stylesheet:
-        <br>
-        <a href="">No Stylesheet.</a>
-        </p>
+    <div class="wrapper">
+        <nav id="list">
+            <ul>
+                <li class="item">Stylesheet 1</li>
+                <li class="item">Stylesheet 2</li>
+                <li class="item">Stylesheet 3</li>
+                <li class="item">Stylesheet 4</li>
+                <li class="item">No Stylesheet</li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Same Page Different Stylesheets</h1>
+            <p>
+            This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the
+            layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links: 
+            <br>
+            <a href="">Stylesheet1</a>, <a href="">Stylesheet2</a>, <a href="">Stylesheet3</a>, <a href="">Stylesheet4.</a>
+            </p>
+            <h2>No Styles</h2>
+            <p>
+            This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks
+            like with no stylesheet:
+            <br>
+            <a href="">No Stylesheet.</a>
+            </p>
+        </main>
+        <aside>
+            <h3>Side-Bar</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.
+            </p>        
+        </aside>
     </div>
-    </main>
     <footer>
-    <aside>
-        <h3>Side-Bar</h3>
-        <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-        dolore magna aliquam erat volutpat.
-        </p>
         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
         dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
         suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
         vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
         iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-    </aside>
     </footer>
 </body>
-
 </html>
